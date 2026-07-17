@@ -35,6 +35,17 @@ async def main() -> None:
             getattr(event.update, "update_id", None),
             exc_info=event.exception,
         )
+        try:
+            if event.update.message:
+                await event.update.message.answer(
+                    "Произошла ошибка. Попробуйте ещё раз чуть позже."
+                )
+            elif event.update.callback_query and event.update.callback_query.message:
+                await event.update.callback_query.message.answer(
+                    "Произошла ошибка. Попробуйте ещё раз чуть позже."
+                )
+        except Exception:
+            logger.debug("Не удалось отправить сообщение об ошибке", exc_info=True)
         return True
 
     logger.info("Бот запускается")
