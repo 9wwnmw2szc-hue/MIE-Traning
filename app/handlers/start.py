@@ -36,9 +36,10 @@ async def _welcome(message: Message, session: AsyncSession, state: FSMContext) -
         )
 
     active = await service.get_active_attempt(db_user.id)
+    total_questions = await service.questions.count_active()
     await state.clear()
     await message.answer(
-        texts.WELCOME_TEXT,
+        texts.WELCOME_TEXT_TEMPLATE.format(total=total_questions or 155),
         reply_markup=main_menu_keyboard(has_active_attempt=active is not None),
     )
 

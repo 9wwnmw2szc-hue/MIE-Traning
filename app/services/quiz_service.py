@@ -13,6 +13,8 @@ from config import get_settings
 
 logger = logging.getLogger(__name__)
 
+OPTION_LETTERS = ("А", "Б", "В", "Г", "Д", "Е")
+
 
 @dataclass(slots=True)
 class QuestionPayload:
@@ -22,6 +24,7 @@ class QuestionPayload:
     total: int
     text: str
     options: list[tuple[int, str]]
+    option_labels: list[str]
 
 
 class QuizService:
@@ -108,13 +111,23 @@ class QuizService:
             return None
 
         options = [(option.id, option.option_text) for option in question.options]
+        labels: list[str] = []
+        short_options: list[tuple[int, str]] = []
+        for index, (option_id, option_text) in enumerate(options):
+            letter = OPTION_LETTERS[index] if index < len(OPTION_LETTERS) else str(index + 1)
+            # If text already starts with "А. ", keep as is for message body.
+            body_text = option_text
+            labels.append(body_text)
+            short_options.append((option_id, letter))
+
         return QuestionPayload(
             attempt_id=attempt.id,
             question_id=question.id,
             position=attempt.current_index + 1,
             total=attempt.total_questions,
             text=question.question_text,
-            options=options,
+            options=short_options,
+            option_labels=labels,
         )
 
     async def submit_answer(

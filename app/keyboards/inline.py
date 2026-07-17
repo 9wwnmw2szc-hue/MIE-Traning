@@ -7,12 +7,23 @@ def answers_keyboard(
     question_id: int,
     options: list[tuple[int, str]],
 ) -> InlineKeyboardMarkup:
+    """
+    options: list of (option_id, button_label)
+    Button labels must be short (<=64 chars) for Telegram.
+    """
     builder = InlineKeyboardBuilder()
+    row: list[InlineKeyboardButton] = []
     for option_id, option_text in options:
-        builder.row(
+        label = option_text if len(option_text) <= 64 else option_text[:61] + "..."
+        row.append(
             InlineKeyboardButton(
-                text=option_text,
+                text=label,
                 callback_data=f"a:{attempt_id}:{question_id}:{option_id}",
             )
         )
+        if len(row) == 2:
+            builder.row(*row)
+            row = []
+    if row:
+        builder.row(*row)
     return builder.as_markup()

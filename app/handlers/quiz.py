@@ -30,7 +30,14 @@ router = Router(name="quiz")
 
 
 def _format_question(payload: QuestionPayload) -> str:
-    return f"Вопрос {payload.position} из {payload.total}\n\n{payload.text}"
+    lines = [
+        f"Вопрос {payload.position} из {payload.total}",
+        "",
+        payload.text,
+        "",
+    ]
+    lines.extend(payload.option_labels)
+    return "\n".join(lines)
 
 
 async def _send_question(message: Message, payload: QuestionPayload) -> None:
