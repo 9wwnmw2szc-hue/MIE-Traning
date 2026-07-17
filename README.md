@@ -219,6 +219,26 @@ sudo systemctl status quiz-bot
 journalctl -u quiz-bot -f
 ```
 
+## 11. Деплой на Railway
+
+1. Зайдите на [railway.com](https://railway.com) и войдите через GitHub.
+2. **New Project** → **Deploy from GitHub repo** → выберите `MIE-Traning`.
+3. Откройте сервис → **Variables** → добавьте:
+   - `BOT_TOKEN` = токен от BotFather
+   - `DATABASE_URL` = `sqlite+aiosqlite:///quiz_bot.db` (можно не добавлять — так по умолчанию)
+4. В **Settings → Deploy** проверьте Start Command:
+   ```text
+   python start.py
+   ```
+5. Дождитесь деплоя и откройте **Deployments → Logs**. Должно быть:
+   - `Импорт вопросов: загружено=...`
+   - `Start polling`
+6. В Telegram отправьте боту `/start`.
+
+Важно: не запускайте бота локально одновременно с Railway — у Telegram polling может быть только один активный процесс на токен.
+
+Файлы для Railway уже в репозитории: `Procfile`, `railway.toml`, `runtime.txt`, `start.py`.
+
 ## Команды быстрого старта
 
 ```bash
