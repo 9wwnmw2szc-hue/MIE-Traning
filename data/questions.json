@@ -1,0 +1,3148 @@
+[
+  {
+    "question": "Столица Российской Федерации?",
+    "answers": [
+      {
+        "text": "Москва",
+        "is_correct": true
+      },
+      {
+        "text": "Санкт-Петербург",
+        "is_correct": false
+      },
+      {
+        "text": "Казань",
+        "is_correct": false
+      },
+      {
+        "text": "Новосибирск",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько дней в високосном году?",
+    "answers": [
+      {
+        "text": "366",
+        "is_correct": true
+      },
+      {
+        "text": "365",
+        "is_correct": false
+      },
+      {
+        "text": "364",
+        "is_correct": false
+      },
+      {
+        "text": "360",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая планета ближайшая к Солнцу?",
+    "answers": [
+      {
+        "text": "Меркурий",
+        "is_correct": true
+      },
+      {
+        "text": "Венера",
+        "is_correct": false
+      },
+      {
+        "text": "Земля",
+        "is_correct": false
+      },
+      {
+        "text": "Марс",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал роман «Война и мир»?",
+    "answers": [
+      {
+        "text": "Лев Толстой",
+        "is_correct": true
+      },
+      {
+        "text": "Фёдор Достоевский",
+        "is_correct": false
+      },
+      {
+        "text": "Александр Пушкин",
+        "is_correct": false
+      },
+      {
+        "text": "Антон Чехов",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Химический символ воды?",
+    "answers": [
+      {
+        "text": "H2O",
+        "is_correct": true
+      },
+      {
+        "text": "CO2",
+        "is_correct": false
+      },
+      {
+        "text": "O2",
+        "is_correct": false
+      },
+      {
+        "text": "NaCl",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько континентов принято выделять?",
+    "answers": [
+      {
+        "text": "7",
+        "is_correct": true
+      },
+      {
+        "text": "5",
+        "is_correct": false
+      },
+      {
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой газ преобладает в атмосфере Земли?",
+    "answers": [
+      {
+        "text": "Азот",
+        "is_correct": true
+      },
+      {
+        "text": "Кислород",
+        "is_correct": false
+      },
+      {
+        "text": "Углекислый газ",
+        "is_correct": false
+      },
+      {
+        "text": "Водород",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "В каком году человек впервые высадился на Луну?",
+    "answers": [
+      {
+        "text": "1969",
+        "is_correct": true
+      },
+      {
+        "text": "1961",
+        "is_correct": false
+      },
+      {
+        "text": "1975",
+        "is_correct": false
+      },
+      {
+        "text": "1957",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Самая длинная река в мире (по одной из классификаций)?",
+    "answers": [
+      {
+        "text": "Нил",
+        "is_correct": true
+      },
+      {
+        "text": "Волга",
+        "is_correct": false
+      },
+      {
+        "text": "Дунай",
+        "is_correct": false
+      },
+      {
+        "text": "Темза",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько градусов в прямом угле?",
+    "answers": [
+      {
+        "text": "90",
+        "is_correct": true
+      },
+      {
+        "text": "45",
+        "is_correct": false
+      },
+      {
+        "text": "180",
+        "is_correct": false
+      },
+      {
+        "text": "360",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто автор «Евгения Онегина»?",
+    "answers": [
+      {
+        "text": "Александр Пушкин",
+        "is_correct": true
+      },
+      {
+        "text": "Михаил Лермонтов",
+        "is_correct": false
+      },
+      {
+        "text": "Николай Гоголь",
+        "is_correct": false
+      },
+      {
+        "text": "Иван Тургенев",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая единица измеряет силу тока?",
+    "answers": [
+      {
+        "text": "Ампер",
+        "is_correct": true
+      },
+      {
+        "text": "Вольт",
+        "is_correct": false
+      },
+      {
+        "text": "Ом",
+        "is_correct": false
+      },
+      {
+        "text": "Ватт",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Франции?",
+    "answers": [
+      {
+        "text": "Париж",
+        "is_correct": true
+      },
+      {
+        "text": "Лион",
+        "is_correct": false
+      },
+      {
+        "text": "Марсель",
+        "is_correct": false
+      },
+      {
+        "text": "Ницца",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько сторон у треугольника?",
+    "answers": [
+      {
+        "text": "3",
+        "is_correct": true
+      },
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "5",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой океан самый большой?",
+    "answers": [
+      {
+        "text": "Тихий",
+        "is_correct": true
+      },
+      {
+        "text": "Атлантический",
+        "is_correct": false
+      },
+      {
+        "text": "Индийский",
+        "is_correct": false
+      },
+      {
+        "text": "Северный Ледовитый",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Формула площади прямоугольника?",
+    "answers": [
+      {
+        "text": "длина × ширина",
+        "is_correct": true
+      },
+      {
+        "text": "длина + ширина",
+        "is_correct": false
+      },
+      {
+        "text": "2πr",
+        "is_correct": false
+      },
+      {
+        "text": "a² + b²",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто изобрёл телефон?",
+    "answers": [
+      {
+        "text": "Александр Белл",
+        "is_correct": true
+      },
+      {
+        "text": "Томас Эдисон",
+        "is_correct": false
+      },
+      {
+        "text": "Никола Тесла",
+        "is_correct": false
+      },
+      {
+        "text": "Гульельмо Маркони",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой язык программирования создал Гвидо ван Россум?",
+    "answers": [
+      {
+        "text": "Python",
+        "is_correct": true
+      },
+      {
+        "text": "Java",
+        "is_correct": false
+      },
+      {
+        "text": "C++",
+        "is_correct": false
+      },
+      {
+        "text": "Ruby",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько минут в одном часе?",
+    "answers": [
+      {
+        "text": "60",
+        "is_correct": true
+      },
+      {
+        "text": "100",
+        "is_correct": false
+      },
+      {
+        "text": "30",
+        "is_correct": false
+      },
+      {
+        "text": "24",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая страна подарила Статую Свободы США?",
+    "answers": [
+      {
+        "text": "Франция",
+        "is_correct": true
+      },
+      {
+        "text": "Великобритания",
+        "is_correct": false
+      },
+      {
+        "text": "Испания",
+        "is_correct": false
+      },
+      {
+        "text": "Италия",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Самая высокая гора мира?",
+    "answers": [
+      {
+        "text": "Эверест",
+        "is_correct": true
+      },
+      {
+        "text": "Эльбрус",
+        "is_correct": false
+      },
+      {
+        "text": "Килиманджаро",
+        "is_correct": false
+      },
+      {
+        "text": "Монблан",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой элемент обозначается как Fe?",
+    "answers": [
+      {
+        "text": "Железо",
+        "is_correct": true
+      },
+      {
+        "text": "Фтор",
+        "is_correct": false
+      },
+      {
+        "text": "Фосфор",
+        "is_correct": false
+      },
+      {
+        "text": "Фермий",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Японии?",
+    "answers": [
+      {
+        "text": "Токио",
+        "is_correct": true
+      },
+      {
+        "text": "Осака",
+        "is_correct": false
+      },
+      {
+        "text": "Киото",
+        "is_correct": false
+      },
+      {
+        "text": "Нагоя",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько хромосом у человека?",
+    "answers": [
+      {
+        "text": "46",
+        "is_correct": true
+      },
+      {
+        "text": "23",
+        "is_correct": false
+      },
+      {
+        "text": "48",
+        "is_correct": false
+      },
+      {
+        "text": "44",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Преступление и наказание»?",
+    "answers": [
+      {
+        "text": "Фёдор Достоевский",
+        "is_correct": true
+      },
+      {
+        "text": "Лев Толстой",
+        "is_correct": false
+      },
+      {
+        "text": "Иван Гончаров",
+        "is_correct": false
+      },
+      {
+        "text": "Антон Чехов",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая планета известна своими кольцами?",
+    "answers": [
+      {
+        "text": "Сатурн",
+        "is_correct": true
+      },
+      {
+        "text": "Юпитер",
+        "is_correct": false
+      },
+      {
+        "text": "Уран",
+        "is_correct": false
+      },
+      {
+        "text": "Нептун",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько цветов у радуги?",
+    "answers": [
+      {
+        "text": "7",
+        "is_correct": true
+      },
+      {
+        "text": "5",
+        "is_correct": false
+      },
+      {
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что измеряет термометр?",
+    "answers": [
+      {
+        "text": "Температуру",
+        "is_correct": true
+      },
+      {
+        "text": "Давление",
+        "is_correct": false
+      },
+      {
+        "text": "Скорость",
+        "is_correct": false
+      },
+      {
+        "text": "Влажность",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Италии?",
+    "answers": [
+      {
+        "text": "Рим",
+        "is_correct": true
+      },
+      {
+        "text": "Милан",
+        "is_correct": false
+      },
+      {
+        "text": "Венеция",
+        "is_correct": false
+      },
+      {
+        "text": "Неаполь",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой орган отвечает за перекачивание крови?",
+    "answers": [
+      {
+        "text": "Сердце",
+        "is_correct": true
+      },
+      {
+        "text": "Лёгкие",
+        "is_correct": false
+      },
+      {
+        "text": "Печень",
+        "is_correct": false
+      },
+      {
+        "text": "Почки",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "2 + 2 × 2 = ?",
+    "answers": [
+      {
+        "text": "6",
+        "is_correct": true
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      },
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой материк самый маленький?",
+    "answers": [
+      {
+        "text": "Австралия",
+        "is_correct": true
+      },
+      {
+        "text": "Европа",
+        "is_correct": false
+      },
+      {
+        "text": "Антарктида",
+        "is_correct": false
+      },
+      {
+        "text": "Южная Америка",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Гамлета»?",
+    "answers": [
+      {
+        "text": "Уильям Шекспир",
+        "is_correct": true
+      },
+      {
+        "text": "Чарльз Диккенс",
+        "is_correct": false
+      },
+      {
+        "text": "Марк Твен",
+        "is_correct": false
+      },
+      {
+        "text": "Жюль Верн",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Скорость света приблизительно?",
+    "answers": [
+      {
+        "text": "300 000 км/с",
+        "is_correct": true
+      },
+      {
+        "text": "300 км/с",
+        "is_correct": false
+      },
+      {
+        "text": "3 000 км/с",
+        "is_correct": false
+      },
+      {
+        "text": "30 000 км/с",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой зверь является символом России?",
+    "answers": [
+      {
+        "text": "Медведь",
+        "is_correct": true
+      },
+      {
+        "text": "Орёл",
+        "is_correct": false
+      },
+      {
+        "text": "Волк",
+        "is_correct": false
+      },
+      {
+        "text": "Лев",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько букв в русском алфавите?",
+    "answers": [
+      {
+        "text": "33",
+        "is_correct": true
+      },
+      {
+        "text": "32",
+        "is_correct": false
+      },
+      {
+        "text": "26",
+        "is_correct": false
+      },
+      {
+        "text": "30",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая формула Эйнштейна самая известная?",
+    "answers": [
+      {
+        "text": "E = mc²",
+        "is_correct": true
+      },
+      {
+        "text": "F = ma",
+        "is_correct": false
+      },
+      {
+        "text": "a² + b² = c²",
+        "is_correct": false
+      },
+      {
+        "text": "PV = nRT",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Германии?",
+    "answers": [
+      {
+        "text": "Берлин",
+        "is_correct": true
+      },
+      {
+        "text": "Мюнхен",
+        "is_correct": false
+      },
+      {
+        "text": "Гамбург",
+        "is_correct": false
+      },
+      {
+        "text": "Франкфурт",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой витамин вырабатывается на солнце?",
+    "answers": [
+      {
+        "text": "D",
+        "is_correct": true
+      },
+      {
+        "text": "C",
+        "is_correct": false
+      },
+      {
+        "text": "A",
+        "is_correct": false
+      },
+      {
+        "text": "B12",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько часов в сутках?",
+    "answers": [
+      {
+        "text": "24",
+        "is_correct": true
+      },
+      {
+        "text": "12",
+        "is_correct": false
+      },
+      {
+        "text": "48",
+        "is_correct": false
+      },
+      {
+        "text": "60",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Мёртвые души»?",
+    "answers": [
+      {
+        "text": "Николай Гоголь",
+        "is_correct": true
+      },
+      {
+        "text": "Иван Тургенев",
+        "is_correct": false
+      },
+      {
+        "text": "Александр Островский",
+        "is_correct": false
+      },
+      {
+        "text": "Максим Горький",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая самая близкая к Земле звезда?",
+    "answers": [
+      {
+        "text": "Солнце",
+        "is_correct": true
+      },
+      {
+        "text": "Сириус",
+        "is_correct": false
+      },
+      {
+        "text": "Полярная звезда",
+        "is_correct": false
+      },
+      {
+        "text": "Проксима Центавра",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Чему равен π примерно?",
+    "answers": [
+      {
+        "text": "3,14",
+        "is_correct": true
+      },
+      {
+        "text": "2,72",
+        "is_correct": false
+      },
+      {
+        "text": "1,41",
+        "is_correct": false
+      },
+      {
+        "text": "1,62",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Испании?",
+    "answers": [
+      {
+        "text": "Мадрид",
+        "is_correct": true
+      },
+      {
+        "text": "Барселона",
+        "is_correct": false
+      },
+      {
+        "text": "Севилья",
+        "is_correct": false
+      },
+      {
+        "text": "Валенсия",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой металл жидкий при комнатной температуре?",
+    "answers": [
+      {
+        "text": "Ртуть",
+        "is_correct": true
+      },
+      {
+        "text": "Железо",
+        "is_correct": false
+      },
+      {
+        "text": "Медь",
+        "is_correct": false
+      },
+      {
+        "text": "Алюминий",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько игроков в футбольной команде на поле?",
+    "answers": [
+      {
+        "text": "11",
+        "is_correct": true
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      },
+      {
+        "text": "12",
+        "is_correct": false
+      },
+      {
+        "text": "9",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто нарисовал «Мону Лизу»?",
+    "answers": [
+      {
+        "text": "Леонардо да Винчи",
+        "is_correct": true
+      },
+      {
+        "text": "Микеланджело",
+        "is_correct": false
+      },
+      {
+        "text": "Рафаэль",
+        "is_correct": false
+      },
+      {
+        "text": "Ван Гог",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая самая длинная кость человека?",
+    "answers": [
+      {
+        "text": "Бедренная",
+        "is_correct": true
+      },
+      {
+        "text": "Плечевая",
+        "is_correct": false
+      },
+      {
+        "text": "Большеберцовая",
+        "is_correct": false
+      },
+      {
+        "text": "Позвоночник",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Китая?",
+    "answers": [
+      {
+        "text": "Пекин",
+        "is_correct": true
+      },
+      {
+        "text": "Шанхай",
+        "is_correct": false
+      },
+      {
+        "text": "Гонконг",
+        "is_correct": false
+      },
+      {
+        "text": "Гуанчжоу",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что такое HTML?",
+    "answers": [
+      {
+        "text": "Язык разметки",
+        "is_correct": true
+      },
+      {
+        "text": "Язык программирования",
+        "is_correct": false
+      },
+      {
+        "text": "База данных",
+        "is_correct": false
+      },
+      {
+        "text": "Операционная система",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько сторон у шестиугольника?",
+    "answers": [
+      {
+        "text": "6",
+        "is_correct": true
+      },
+      {
+        "text": "5",
+        "is_correct": false
+      },
+      {
+        "text": "7",
+        "is_correct": false
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая птица не умеет летать?",
+    "answers": [
+      {
+        "text": "Пингвин",
+        "is_correct": true
+      },
+      {
+        "text": "Орёл",
+        "is_correct": false
+      },
+      {
+        "text": "Ласточка",
+        "is_correct": false
+      },
+      {
+        "text": "Воробей",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Анну Каренину»?",
+    "answers": [
+      {
+        "text": "Лев Толстой",
+        "is_correct": true
+      },
+      {
+        "text": "Фёдор Достоевский",
+        "is_correct": false
+      },
+      {
+        "text": "Иван Бунин",
+        "is_correct": false
+      },
+      {
+        "text": "Александр Куприн",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой прибор измеряет давление?",
+    "answers": [
+      {
+        "text": "Барометр",
+        "is_correct": true
+      },
+      {
+        "text": "Термометр",
+        "is_correct": false
+      },
+      {
+        "text": "Амперметр",
+        "is_correct": false
+      },
+      {
+        "text": "Одометр",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Великобритании?",
+    "answers": [
+      {
+        "text": "Лондон",
+        "is_correct": true
+      },
+      {
+        "text": "Манчестер",
+        "is_correct": false
+      },
+      {
+        "text": "Ливерпуль",
+        "is_correct": false
+      },
+      {
+        "text": "Эдинбург",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько сантиметров в метре?",
+    "answers": [
+      {
+        "text": "100",
+        "is_correct": true
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      },
+      {
+        "text": "1000",
+        "is_correct": false
+      },
+      {
+        "text": "12",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой цвет получается при смешивании синего и жёлтого?",
+    "answers": [
+      {
+        "text": "Зелёный",
+        "is_correct": true
+      },
+      {
+        "text": "Фиолетовый",
+        "is_correct": false
+      },
+      {
+        "text": "Оранжевый",
+        "is_correct": false
+      },
+      {
+        "text": "Коричневый",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто открыл Америку в 1492 году?",
+    "answers": [
+      {
+        "text": "Христофор Колумб",
+        "is_correct": true
+      },
+      {
+        "text": "Фернан Магеллан",
+        "is_correct": false
+      },
+      {
+        "text": "Васко да Гама",
+        "is_correct": false
+      },
+      {
+        "text": "Джеймс Кук",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая планета красная?",
+    "answers": [
+      {
+        "text": "Марс",
+        "is_correct": true
+      },
+      {
+        "text": "Венера",
+        "is_correct": false
+      },
+      {
+        "text": "Юпитер",
+        "is_correct": false
+      },
+      {
+        "text": "Меркурий",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько зубов у взрослого человека обычно?",
+    "answers": [
+      {
+        "text": "32",
+        "is_correct": true
+      },
+      {
+        "text": "28",
+        "is_correct": false
+      },
+      {
+        "text": "30",
+        "is_correct": false
+      },
+      {
+        "text": "36",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Турции?",
+    "answers": [
+      {
+        "text": "Анкара",
+        "is_correct": true
+      },
+      {
+        "text": "Стамбул",
+        "is_correct": false
+      },
+      {
+        "text": "Измир",
+        "is_correct": false
+      },
+      {
+        "text": "Анталья",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что такое CPU?",
+    "answers": [
+      {
+        "text": "Процессор",
+        "is_correct": true
+      },
+      {
+        "text": "Жёсткий диск",
+        "is_correct": false
+      },
+      {
+        "text": "Оперативная память",
+        "is_correct": false
+      },
+      {
+        "text": "Монитор",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой год считается началом Второй мировой войны?",
+    "answers": [
+      {
+        "text": "1939",
+        "is_correct": true
+      },
+      {
+        "text": "1941",
+        "is_correct": false
+      },
+      {
+        "text": "1914",
+        "is_correct": false
+      },
+      {
+        "text": "1945",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько ног у паука?",
+    "answers": [
+      {
+        "text": "8",
+        "is_correct": true
+      },
+      {
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      },
+      {
+        "text": "4",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Ревизора»?",
+    "answers": [
+      {
+        "text": "Николай Гоголь",
+        "is_correct": true
+      },
+      {
+        "text": "Александр Грибоедов",
+        "is_correct": false
+      },
+      {
+        "text": "Антон Чехов",
+        "is_correct": false
+      },
+      {
+        "text": "Иван Крылов",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая самая большая пустыня в мире?",
+    "answers": [
+      {
+        "text": "Антарктическая",
+        "is_correct": true
+      },
+      {
+        "text": "Сахара",
+        "is_correct": false
+      },
+      {
+        "text": "Гоби",
+        "is_correct": false
+      },
+      {
+        "text": "Калахари",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Канады?",
+    "answers": [
+      {
+        "text": "Оттава",
+        "is_correct": true
+      },
+      {
+        "text": "Торонто",
+        "is_correct": false
+      },
+      {
+        "text": "Ванкувер",
+        "is_correct": false
+      },
+      {
+        "text": "Монреаль",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Чему равен квадратный корень из 81?",
+    "answers": [
+      {
+        "text": "9",
+        "is_correct": true
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      },
+      {
+        "text": "7",
+        "is_correct": false
+      },
+      {
+        "text": "18",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой орган чувств отвечает за обоняние?",
+    "answers": [
+      {
+        "text": "Нос",
+        "is_correct": true
+      },
+      {
+        "text": "Ухо",
+        "is_correct": false
+      },
+      {
+        "text": "Глаз",
+        "is_correct": false
+      },
+      {
+        "text": "Язык",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько недель примерно в году?",
+    "answers": [
+      {
+        "text": "52",
+        "is_correct": true
+      },
+      {
+        "text": "48",
+        "is_correct": false
+      },
+      {
+        "text": "60",
+        "is_correct": false
+      },
+      {
+        "text": "365",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто основал компанию Microsoft?",
+    "answers": [
+      {
+        "text": "Билл Гейтс",
+        "is_correct": true
+      },
+      {
+        "text": "Стив Джобс",
+        "is_correct": false
+      },
+      {
+        "text": "Марк Цукерберг",
+        "is_correct": false
+      },
+      {
+        "text": "Илон Маск",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая формула площади круга?",
+    "answers": [
+      {
+        "text": "πr²",
+        "is_correct": true
+      },
+      {
+        "text": "2πr",
+        "is_correct": false
+      },
+      {
+        "text": "a²",
+        "is_correct": false
+      },
+      {
+        "text": "abh/2",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Бразилии?",
+    "answers": [
+      {
+        "text": "Бразилиа",
+        "is_correct": true
+      },
+      {
+        "text": "Рио-де-Жанейро",
+        "is_correct": false
+      },
+      {
+        "text": "Сан-Паулу",
+        "is_correct": false
+      },
+      {
+        "text": "Сальвадор",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой газ мы выдыхаем в большем количестве?",
+    "answers": [
+      {
+        "text": "Углекислый газ",
+        "is_correct": true
+      },
+      {
+        "text": "Кислород",
+        "is_correct": false
+      },
+      {
+        "text": "Азот",
+        "is_correct": false
+      },
+      {
+        "text": "Гелий",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько планет в Солнечной системе?",
+    "answers": [
+      {
+        "text": "8",
+        "is_correct": true
+      },
+      {
+        "text": "9",
+        "is_correct": false
+      },
+      {
+        "text": "7",
+        "is_correct": false
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал сказку «Колобок»?",
+    "answers": [
+      {
+        "text": "Русская народная",
+        "is_correct": true
+      },
+      {
+        "text": "Александр Пушкин",
+        "is_correct": false
+      },
+      {
+        "text": "Корней Чуковский",
+        "is_correct": false
+      },
+      {
+        "text": "Самуил Маршак",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая единица измерения сопротивления?",
+    "answers": [
+      {
+        "text": "Ом",
+        "is_correct": true
+      },
+      {
+        "text": "Ампер",
+        "is_correct": false
+      },
+      {
+        "text": "Вольт",
+        "is_correct": false
+      },
+      {
+        "text": "Джоуль",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Египта?",
+    "answers": [
+      {
+        "text": "Каир",
+        "is_correct": true
+      },
+      {
+        "text": "Александрия",
+        "is_correct": false
+      },
+      {
+        "text": "Гиза",
+        "is_correct": false
+      },
+      {
+        "text": "Луксор",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько градусов в полном круге?",
+    "answers": [
+      {
+        "text": "360",
+        "is_correct": true
+      },
+      {
+        "text": "180",
+        "is_correct": false
+      },
+      {
+        "text": "90",
+        "is_correct": false
+      },
+      {
+        "text": "100",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой зверь самый быстрый на суше?",
+    "answers": [
+      {
+        "text": "Гепард",
+        "is_correct": true
+      },
+      {
+        "text": "Лев",
+        "is_correct": false
+      },
+      {
+        "text": "Антилопа",
+        "is_correct": false
+      },
+      {
+        "text": "Лошадь",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что означает WWW?",
+    "answers": [
+      {
+        "text": "World Wide Web",
+        "is_correct": true
+      },
+      {
+        "text": "World Wide Work",
+        "is_correct": false
+      },
+      {
+        "text": "Web World Wide",
+        "is_correct": false
+      },
+      {
+        "text": "Wide Web World",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Австралии?",
+    "answers": [
+      {
+        "text": "Канберра",
+        "is_correct": true
+      },
+      {
+        "text": "Сидней",
+        "is_correct": false
+      },
+      {
+        "text": "Мельбурн",
+        "is_correct": false
+      },
+      {
+        "text": "Брисбен",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой химический элемент обозначается O?",
+    "answers": [
+      {
+        "text": "Кислород",
+        "is_correct": true
+      },
+      {
+        "text": "Осмий",
+        "is_correct": false
+      },
+      {
+        "text": "Олово",
+        "is_correct": false
+      },
+      {
+        "text": "Золото",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько байт в килобайте (традиционно)?",
+    "answers": [
+      {
+        "text": "1024",
+        "is_correct": true
+      },
+      {
+        "text": "1000",
+        "is_correct": false
+      },
+      {
+        "text": "512",
+        "is_correct": false
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Отцы и дети»?",
+    "answers": [
+      {
+        "text": "Иван Тургенев",
+        "is_correct": true
+      },
+      {
+        "text": "Лев Толстой",
+        "is_correct": false
+      },
+      {
+        "text": "Фёдор Достоевский",
+        "is_correct": false
+      },
+      {
+        "text": "Николай Чернышевский",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая самая глубокая точка Мирового океана?",
+    "answers": [
+      {
+        "text": "Марианская впадина",
+        "is_correct": true
+      },
+      {
+        "text": "жёлоб Тонга",
+        "is_correct": false
+      },
+      {
+        "text": "жёлоб Курило-Камчатский",
+        "is_correct": false
+      },
+      {
+        "text": "жёлоб Пуэрто-Рико",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Индии?",
+    "answers": [
+      {
+        "text": "Нью-Дели",
+        "is_correct": true
+      },
+      {
+        "text": "Мумбаи",
+        "is_correct": false
+      },
+      {
+        "text": "Калькутта",
+        "is_correct": false
+      },
+      {
+        "text": "Бангалор",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Чему равна сумма углов треугольника?",
+    "answers": [
+      {
+        "text": "180°",
+        "is_correct": true
+      },
+      {
+        "text": "90°",
+        "is_correct": false
+      },
+      {
+        "text": "360°",
+        "is_correct": false
+      },
+      {
+        "text": "270°",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой инструмент измеряет время?",
+    "answers": [
+      {
+        "text": "Часы",
+        "is_correct": true
+      },
+      {
+        "text": "Линейка",
+        "is_correct": false
+      },
+      {
+        "text": "Весы",
+        "is_correct": false
+      },
+      {
+        "text": "Компас",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько струн у классической гитары?",
+    "answers": [
+      {
+        "text": "6",
+        "is_correct": true
+      },
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "7",
+        "is_correct": false
+      },
+      {
+        "text": "12",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто изобрёл лампочку накаливания (одна из ключевых фигур)?",
+    "answers": [
+      {
+        "text": "Томас Эдисон",
+        "is_correct": true
+      },
+      {
+        "text": "Александр Белл",
+        "is_correct": false
+      },
+      {
+        "text": "Генри Форд",
+        "is_correct": false
+      },
+      {
+        "text": "Джеймс Уатт",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая кровь считается универсальным донором?",
+    "answers": [
+      {
+        "text": "O (I)",
+        "is_correct": true
+      },
+      {
+        "text": "A (II)",
+        "is_correct": false
+      },
+      {
+        "text": "B (III)",
+        "is_correct": false
+      },
+      {
+        "text": "AB (IV)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Южной Кореи?",
+    "answers": [
+      {
+        "text": "Сеул",
+        "is_correct": true
+      },
+      {
+        "text": "Пусан",
+        "is_correct": false
+      },
+      {
+        "text": "Инчхон",
+        "is_correct": false
+      },
+      {
+        "text": "Пхеньян",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что такое фотосинтез?",
+    "answers": [
+      {
+        "text": "Образование органики растениями на свету",
+        "is_correct": true
+      },
+      {
+        "text": "Дыхание животных",
+        "is_correct": false
+      },
+      {
+        "text": "Испарение воды",
+        "is_correct": false
+      },
+      {
+        "text": "Распад атомов",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько нулей в числе миллион?",
+    "answers": [
+      {
+        "text": "6",
+        "is_correct": true
+      },
+      {
+        "text": "3",
+        "is_correct": false
+      },
+      {
+        "text": "9",
+        "is_correct": false
+      },
+      {
+        "text": "12",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Вишнёвый сад»?",
+    "answers": [
+      {
+        "text": "Антон Чехов",
+        "is_correct": true
+      },
+      {
+        "text": "Максим Горький",
+        "is_correct": false
+      },
+      {
+        "text": "Александр Островский",
+        "is_correct": false
+      },
+      {
+        "text": "Иван Бунин",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая планета самая большая в Солнечной системе?",
+    "answers": [
+      {
+        "text": "Юпитер",
+        "is_correct": true
+      },
+      {
+        "text": "Сатурн",
+        "is_correct": false
+      },
+      {
+        "text": "Нептун",
+        "is_correct": false
+      },
+      {
+        "text": "Земля",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Швеции?",
+    "answers": [
+      {
+        "text": "Стокгольм",
+        "is_correct": true
+      },
+      {
+        "text": "Осло",
+        "is_correct": false
+      },
+      {
+        "text": "Копенгаген",
+        "is_correct": false
+      },
+      {
+        "text": "Хельсинки",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько месяцев в году имеют 31 день?",
+    "answers": [
+      {
+        "text": "7",
+        "is_correct": true
+      },
+      {
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "text": "5",
+        "is_correct": false
+      },
+      {
+        "text": "8",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой файл обычно содержит стили веб-страницы?",
+    "answers": [
+      {
+        "text": "CSS",
+        "is_correct": true
+      },
+      {
+        "text": "HTML",
+        "is_correct": false
+      },
+      {
+        "text": "JS",
+        "is_correct": false
+      },
+      {
+        "text": "SQL",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто первым полетел в космос?",
+    "answers": [
+      {
+        "text": "Юрий Гагарин",
+        "is_correct": true
+      },
+      {
+        "text": "Нил Армстронг",
+        "is_correct": false
+      },
+      {
+        "text": "Алексей Леонов",
+        "is_correct": false
+      },
+      {
+        "text": "Валентина Терешкова",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая единица измерения энергии?",
+    "answers": [
+      {
+        "text": "Джоуль",
+        "is_correct": true
+      },
+      {
+        "text": "Ньютон",
+        "is_correct": false
+      },
+      {
+        "text": "Паскаль",
+        "is_correct": false
+      },
+      {
+        "text": "Ватт",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Мексики?",
+    "answers": [
+      {
+        "text": "Мехико",
+        "is_correct": true
+      },
+      {
+        "text": "Гвадалахара",
+        "is_correct": false
+      },
+      {
+        "text": "Канкун",
+        "is_correct": false
+      },
+      {
+        "text": "Монтеррей",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько будет 15% от 200?",
+    "answers": [
+      {
+        "text": "30",
+        "is_correct": true
+      },
+      {
+        "text": "15",
+        "is_correct": false
+      },
+      {
+        "text": "20",
+        "is_correct": false
+      },
+      {
+        "text": "25",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой орган человека фильтрует кровь?",
+    "answers": [
+      {
+        "text": "Почки",
+        "is_correct": true
+      },
+      {
+        "text": "Сердце",
+        "is_correct": false
+      },
+      {
+        "text": "Желудок",
+        "is_correct": false
+      },
+      {
+        "text": "Селезёнка",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Мастер и Маргарита»?",
+    "answers": [
+      {
+        "text": "Михаил Булгаков",
+        "is_correct": true
+      },
+      {
+        "text": "Борис Пастернак",
+        "is_correct": false
+      },
+      {
+        "text": "Александр Солженицын",
+        "is_correct": false
+      },
+      {
+        "text": "Владимир Набоков",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая гора самая высокая в Европе?",
+    "answers": [
+      {
+        "text": "Эльбрус",
+        "is_correct": true
+      },
+      {
+        "text": "Монблан",
+        "is_correct": false
+      },
+      {
+        "text": "Маттерхорн",
+        "is_correct": false
+      },
+      {
+        "text": "Олимп",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Греции?",
+    "answers": [
+      {
+        "text": "Афины",
+        "is_correct": true
+      },
+      {
+        "text": "Салоники",
+        "is_correct": false
+      },
+      {
+        "text": "Спарта",
+        "is_correct": false
+      },
+      {
+        "text": "Родос",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что означает HTTP?",
+    "answers": [
+      {
+        "text": "HyperText Transfer Protocol",
+        "is_correct": true
+      },
+      {
+        "text": "High Transfer Text Protocol",
+        "is_correct": false
+      },
+      {
+        "text": "Hyperlink Text Transfer Process",
+        "is_correct": false
+      },
+      {
+        "text": "Host Transfer Text Protocol",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько градусов Цельсия в точке замерзания воды?",
+    "answers": [
+      {
+        "text": "0",
+        "is_correct": true
+      },
+      {
+        "text": "100",
+        "is_correct": false
+      },
+      {
+        "text": "32",
+        "is_correct": false
+      },
+      {
+        "text": "-1",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой металл обозначается Au?",
+    "answers": [
+      {
+        "text": "Золото",
+        "is_correct": true
+      },
+      {
+        "text": "Серебро",
+        "is_correct": false
+      },
+      {
+        "text": "Алюминий",
+        "is_correct": false
+      },
+      {
+        "text": "Медь",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал музыку к балету «Лебединое озеро»?",
+    "answers": [
+      {
+        "text": "Пётр Чайковский",
+        "is_correct": true
+      },
+      {
+        "text": "Сергей Рахманинов",
+        "is_correct": false
+      },
+      {
+        "text": "Игорь Стравинский",
+        "is_correct": false
+      },
+      {
+        "text": "Дмитрий Шостакович",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Польши?",
+    "answers": [
+      {
+        "text": "Варшава",
+        "is_correct": true
+      },
+      {
+        "text": "Краков",
+        "is_correct": false
+      },
+      {
+        "text": "Гданьск",
+        "is_correct": false
+      },
+      {
+        "text": "Вроцлав",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько бит в байте?",
+    "answers": [
+      {
+        "text": "8",
+        "is_correct": true
+      },
+      {
+        "text": "16",
+        "is_correct": false
+      },
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая самая длинная река России?",
+    "answers": [
+      {
+        "text": "Лена",
+        "is_correct": true
+      },
+      {
+        "text": "Волга",
+        "is_correct": false
+      },
+      {
+        "text": "Обь",
+        "is_correct": false
+      },
+      {
+        "text": "Енисей",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что изучают в ботанике?",
+    "answers": [
+      {
+        "text": "Растения",
+        "is_correct": true
+      },
+      {
+        "text": "Животных",
+        "is_correct": false
+      },
+      {
+        "text": "Звёзды",
+        "is_correct": false
+      },
+      {
+        "text": "Горные породы",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Герой нашего времени»?",
+    "answers": [
+      {
+        "text": "Михаил Лермонтов",
+        "is_correct": true
+      },
+      {
+        "text": "Александр Пушкин",
+        "is_correct": false
+      },
+      {
+        "text": "Николай Гоголь",
+        "is_correct": false
+      },
+      {
+        "text": "Иван Тургенев",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Норвегии?",
+    "answers": [
+      {
+        "text": "Осло",
+        "is_correct": true
+      },
+      {
+        "text": "Берген",
+        "is_correct": false
+      },
+      {
+        "text": "Стокгольм",
+        "is_correct": false
+      },
+      {
+        "text": "Копенгаген",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько будет 7 × 8?",
+    "answers": [
+      {
+        "text": "56",
+        "is_correct": true
+      },
+      {
+        "text": "54",
+        "is_correct": false
+      },
+      {
+        "text": "63",
+        "is_correct": false
+      },
+      {
+        "text": "48",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой инструмент нужен для измерения длины?",
+    "answers": [
+      {
+        "text": "Линейка",
+        "is_correct": true
+      },
+      {
+        "text": "Термометр",
+        "is_correct": false
+      },
+      {
+        "text": "Барометр",
+        "is_correct": false
+      },
+      {
+        "text": "Секундомер",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая кислота содержится в желудке человека?",
+    "answers": [
+      {
+        "text": "Соляная",
+        "is_correct": true
+      },
+      {
+        "text": "Серная",
+        "is_correct": false
+      },
+      {
+        "text": "Уксусная",
+        "is_correct": false
+      },
+      {
+        "text": "Лимонная",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Чехии?",
+    "answers": [
+      {
+        "text": "Прага",
+        "is_correct": true
+      },
+      {
+        "text": "Брно",
+        "is_correct": false
+      },
+      {
+        "text": "Братислава",
+        "is_correct": false
+      },
+      {
+        "text": "Вена",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько материков пересекает экватор?",
+    "answers": [
+      {
+        "text": "3",
+        "is_correct": true
+      },
+      {
+        "text": "2",
+        "is_correct": false
+      },
+      {
+        "text": "4",
+        "is_correct": false
+      },
+      {
+        "text": "5",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто изобрёл книгопечатание в Европе?",
+    "answers": [
+      {
+        "text": "Иоганн Гутенберг",
+        "is_correct": true
+      },
+      {
+        "text": "Леонардо да Винчи",
+        "is_correct": false
+      },
+      {
+        "text": "Галилео Галилей",
+        "is_correct": false
+      },
+      {
+        "text": "Исаак Ньютон",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой язык является официальным в Бразилии?",
+    "answers": [
+      {
+        "text": "Португальский",
+        "is_correct": true
+      },
+      {
+        "text": "Испанский",
+        "is_correct": false
+      },
+      {
+        "text": "Французский",
+        "is_correct": false
+      },
+      {
+        "text": "Английский",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько будет квадрат числа 12?",
+    "answers": [
+      {
+        "text": "144",
+        "is_correct": true
+      },
+      {
+        "text": "124",
+        "is_correct": false
+      },
+      {
+        "text": "132",
+        "is_correct": false
+      },
+      {
+        "text": "120",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой орган отвечает за зрение?",
+    "answers": [
+      {
+        "text": "Глаз",
+        "is_correct": true
+      },
+      {
+        "text": "Ухо",
+        "is_correct": false
+      },
+      {
+        "text": "Нос",
+        "is_correct": false
+      },
+      {
+        "text": "Кожа",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Аргентины?",
+    "answers": [
+      {
+        "text": "Буэнос-Айрес",
+        "is_correct": true
+      },
+      {
+        "text": "Сантьяго",
+        "is_correct": false
+      },
+      {
+        "text": "Лима",
+        "is_correct": false
+      },
+      {
+        "text": "Монтевидео",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что такое ДНК?",
+    "answers": [
+      {
+        "text": "Носитель генетической информации",
+        "is_correct": true
+      },
+      {
+        "text": "Вид вируса",
+        "is_correct": false
+      },
+      {
+        "text": "Тип белка",
+        "is_correct": false
+      },
+      {
+        "text": "Клетка крови",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Тихий Дон»?",
+    "answers": [
+      {
+        "text": "Михаил Шолохов",
+        "is_correct": true
+      },
+      {
+        "text": "Максим Горький",
+        "is_correct": false
+      },
+      {
+        "text": "Александр Фадеев",
+        "is_correct": false
+      },
+      {
+        "text": "Борис Пастернак",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько минут в двух часах?",
+    "answers": [
+      {
+        "text": "120",
+        "is_correct": true
+      },
+      {
+        "text": "60",
+        "is_correct": false
+      },
+      {
+        "text": "100",
+        "is_correct": false
+      },
+      {
+        "text": "90",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая планета считается карликовой?",
+    "answers": [
+      {
+        "text": "Плутон",
+        "is_correct": true
+      },
+      {
+        "text": "Марс",
+        "is_correct": false
+      },
+      {
+        "text": "Венера",
+        "is_correct": false
+      },
+      {
+        "text": "Меркурий",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Португалии?",
+    "answers": [
+      {
+        "text": "Лиссабон",
+        "is_correct": true
+      },
+      {
+        "text": "Порту",
+        "is_correct": false
+      },
+      {
+        "text": "Мадрид",
+        "is_correct": false
+      },
+      {
+        "text": "Севилья",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Чему равен периметр квадрата со стороной 5?",
+    "answers": [
+      {
+        "text": "20",
+        "is_correct": true
+      },
+      {
+        "text": "25",
+        "is_correct": false
+      },
+      {
+        "text": "10",
+        "is_correct": false
+      },
+      {
+        "text": "15",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой газ используется в воздушных шарах для подъёма?",
+    "answers": [
+      {
+        "text": "Гелий",
+        "is_correct": true
+      },
+      {
+        "text": "Кислород",
+        "is_correct": false
+      },
+      {
+        "text": "Углекислый газ",
+        "is_correct": false
+      },
+      {
+        "text": "Азот",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько дней в сентябре?",
+    "answers": [
+      {
+        "text": "30",
+        "is_correct": true
+      },
+      {
+        "text": "31",
+        "is_correct": false
+      },
+      {
+        "text": "28",
+        "is_correct": false
+      },
+      {
+        "text": "29",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто сформулировал законы движения?",
+    "answers": [
+      {
+        "text": "Исаак Ньютон",
+        "is_correct": true
+      },
+      {
+        "text": "Альберт Эйнштейн",
+        "is_correct": false
+      },
+      {
+        "text": "Галилео Галилей",
+        "is_correct": false
+      },
+      {
+        "text": "Никола Тесла",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Финляндии?",
+    "answers": [
+      {
+        "text": "Хельсинки",
+        "is_correct": true
+      },
+      {
+        "text": "Таллин",
+        "is_correct": false
+      },
+      {
+        "text": "Осло",
+        "is_correct": false
+      },
+      {
+        "text": "Стокгольм",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Что означает аббревиатура USB?",
+    "answers": [
+      {
+        "text": "Universal Serial Bus",
+        "is_correct": true
+      },
+      {
+        "text": "United System Board",
+        "is_correct": false
+      },
+      {
+        "text": "Ultra Speed Bit",
+        "is_correct": false
+      },
+      {
+        "text": "User Serial Bridge",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько будет 100 − 37?",
+    "answers": [
+      {
+        "text": "63",
+        "is_correct": true
+      },
+      {
+        "text": "73",
+        "is_correct": false
+      },
+      {
+        "text": "67",
+        "is_correct": false
+      },
+      {
+        "text": "53",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая самая маленькая планета Солнечной системы?",
+    "answers": [
+      {
+        "text": "Меркурий",
+        "is_correct": true
+      },
+      {
+        "text": "Марс",
+        "is_correct": false
+      },
+      {
+        "text": "Плутон",
+        "is_correct": false
+      },
+      {
+        "text": "Венера",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Венгрии?",
+    "answers": [
+      {
+        "text": "Будапешт",
+        "is_correct": true
+      },
+      {
+        "text": "Бухарест",
+        "is_correct": false
+      },
+      {
+        "text": "Белград",
+        "is_correct": false
+      },
+      {
+        "text": "Прага",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой процесс превращает воду в пар?",
+    "answers": [
+      {
+        "text": "Испарение",
+        "is_correct": true
+      },
+      {
+        "text": "Конденсация",
+        "is_correct": false
+      },
+      {
+        "text": "Замерзание",
+        "is_correct": false
+      },
+      {
+        "text": "Плавление",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько будет 9²?",
+    "answers": [
+      {
+        "text": "81",
+        "is_correct": true
+      },
+      {
+        "text": "18",
+        "is_correct": false
+      },
+      {
+        "text": "72",
+        "is_correct": false
+      },
+      {
+        "text": "99",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Кто написал «Горе от ума»?",
+    "answers": [
+      {
+        "text": "Александр Грибоедов",
+        "is_correct": true
+      },
+      {
+        "text": "Александр Пушкин",
+        "is_correct": false
+      },
+      {
+        "text": "Николай Гоголь",
+        "is_correct": false
+      },
+      {
+        "text": "Денис Фонвизин",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Австрии?",
+    "answers": [
+      {
+        "text": "Вена",
+        "is_correct": true
+      },
+      {
+        "text": "Зальцбург",
+        "is_correct": false
+      },
+      {
+        "text": "Инсбрук",
+        "is_correct": false
+      },
+      {
+        "text": "Мюнхен",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какой цвет у хлорофилла?",
+    "answers": [
+      {
+        "text": "Зелёный",
+        "is_correct": true
+      },
+      {
+        "text": "Красный",
+        "is_correct": false
+      },
+      {
+        "text": "Жёлтый",
+        "is_correct": false
+      },
+      {
+        "text": "Синий",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько будет 3³?",
+    "answers": [
+      {
+        "text": "27",
+        "is_correct": true
+      },
+      {
+        "text": "9",
+        "is_correct": false
+      },
+      {
+        "text": "18",
+        "is_correct": false
+      },
+      {
+        "text": "81",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Какая единица измеряет частоту?",
+    "answers": [
+      {
+        "text": "Герц",
+        "is_correct": true
+      },
+      {
+        "text": "Ватт",
+        "is_correct": false
+      },
+      {
+        "text": "Люкс",
+        "is_correct": false
+      },
+      {
+        "text": "Тесла",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Столица Бельгии?",
+    "answers": [
+      {
+        "text": "Брюссель",
+        "is_correct": true
+      },
+      {
+        "text": "Антверпен",
+        "is_correct": false
+      },
+      {
+        "text": "Брюгге",
+        "is_correct": false
+      },
+      {
+        "text": "Амстердам",
+        "is_correct": false
+      }
+    ]
+  }
+]
