@@ -46,40 +46,49 @@ class QuizService:
     async def get_active_attempt(self, user_id: int) -> Optional[TestAttempt]:
         return await self.attempts.get_active_for_user(user_id)
 
-    async def can_start_test(self) -> bool:
+    async def can_start_test(self, *, full: bool = False) -> bool:
         count = await self.questions.count_active()
+        if full:
+            return count >= 1
         return count >= self.settings.min_active_questions
 
-    async def start_test(self, user: User) -> TestAttempt:
+    async def start_test(self, user: User, *, full: bool = False) -> TestAttempt:
         active = await self.get_active_attempt(user.id)
         if active is not None:
             raise RuntimeError("active_attempt_exists")
 
-        if not await self.can_start_test():
+        if not await self.can_start_test(full=full):
             raise RuntimeError("not_enough_questions")
 
-        all_questions = await self.questions.get_active_with_options()
-        selected = random.sample(
-            list(all_questions),
-            k=self.settings.questions_per_test,
-        )
-        random.shuffle(selected)
+        all_questions = list(await self.questions.get_active_with_options())
+        if full:
+            selected = all_questions[:]
+            random.shuffle(selected)
+        else:
+            selected = random.sample(
+                all_questions,
+                k=min(self.settings.questions_per_test, len(all_questions)),
+            )
+            random.shuffle(selected)
+
         question_ids = [question.id for question in selected]
+        total_questions = len(question_ids)
 
         attempt = await self.attempts.create_attempt(
             user_id=user.id,
             question_ids=question_ids,
-            total_questions=self.settings.questions_per_test,
+            total_questions=total_questions,
         )
         logger.info(
-            "Начат тест attempt_id=%s user_id=%s questions=%s",
+            "Начат тест attempt_id=%s user_id=%s mode=%s questions=%s",
             attempt.id,
             user.id,
-            question_ids,
+            "killer" if full else "standard",
+            total_questions,
         )
         return attempt
 
-    async def restart_test(self, user: User) -> TestAttempt:
+    async def restart_test(self, user: User, *, full: bool = False) -> TestAttempt:
         active = await self.get_active_attempt(user.id)
         if active is not None:
             await self.attempts.cancel_attempt(active)
@@ -88,7 +97,11 @@ class QuizService:
                 active.id,
                 user.id,
             )
-        return await self.start_test(user)
+        return await self.start_test(user, full=full)
+
+    @staticmethod
+    def is_full_attempt(attempt: TestAttempt, questions_per_test: int) -> bool:
+        return attempt.total_questions > questions_per_test
 
     async def get_current_question(self, attempt: TestAttempt) -> Optional[QuestionPayload]:
         if attempt.status != "in_progress":

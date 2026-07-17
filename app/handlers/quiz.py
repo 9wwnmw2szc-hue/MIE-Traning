@@ -12,6 +12,7 @@ from app.keyboards.reply import (
     BTN_CANCEL,
     BTN_CONTINUE,
     BTN_CONTINUE_TEST,
+    BTN_KILLER_MODE,
     BTN_RESTART,
     BTN_RETRY,
     BTN_SHOW_ERRORS,
@@ -24,6 +25,7 @@ from app.services.quiz_service import QuestionPayload, QuizService
 from app.services.result_service import ResultService
 from app.states.quiz import QuizStates
 from app.utils import texts
+from config import get_settings
 
 logger = logging.getLogger(__name__)
 router = Router(name="quiz")
@@ -57,6 +59,7 @@ async def _begin_attempt(
     state: FSMContext,
     *,
     restart: bool = False,
+    full: bool | None = None,
 ) -> None:
     service = QuizService(session)
     user = message.from_user
@@ -66,17 +69,22 @@ async def _begin_attempt(
 
     db_user, _ = await service.ensure_user(user.id, user.username, user.full_name)
 
+    data = await state.get_data()
+    if full is None:
+        full = bool(data.get("full_mode", False))
+
     try:
         if restart:
-            attempt = await service.restart_test(db_user)
+            attempt = await service.restart_test(db_user, full=full)
         else:
-            attempt = await service.start_test(db_user)
+            attempt = await service.start_test(db_user, full=full)
     except RuntimeError as exc:
         if str(exc) == "not_enough_questions":
             await message.answer(texts.NOT_ENOUGH_QUESTIONS)
             return
         if str(exc) == "active_attempt_exists":
             await state.set_state(QuizStates.conflict)
+            await state.update_data(full_mode=full)
             await message.answer(
                 texts.ACTIVE_TEST_EXISTS,
                 reply_markup=active_test_conflict_keyboard(),
@@ -96,8 +104,13 @@ async def _begin_attempt(
         return
 
     await state.set_state(QuizStates.answering)
-    await state.update_data(attempt_id=attempt.id)
-    await message.answer(texts.TEST_STARTED_TEXT)
+    await state.update_data(attempt_id=attempt.id, full_mode=full)
+    started_text = (
+        texts.KILLER_STARTED_TEXT.format(total=attempt.total_questions)
+        if full
+        else texts.TEST_STARTED_TEXT.format(total=attempt.total_questions)
+    )
+    await message.answer(started_text)
     await _send_question(message, question)
 
 
@@ -127,20 +140,39 @@ async def _continue_attempt(
         await message.answer(texts.GENERIC_ERROR)
         return
 
+    settings = get_settings(require_token=False)
+    full_mode = QuizService.is_full_attempt(attempt, settings.questions_per_test)
     await state.set_state(QuizStates.answering)
-    await state.update_data(attempt_id=attempt.id)
+    await state.update_data(attempt_id=attempt.id, full_mode=full_mode)
     await message.answer("Продолжаем тест.")
     await _send_question(message, question)
 
 
 @router.message(F.text == BTN_START_TEST)
 async def start_test(message: Message, session: AsyncSession, state: FSMContext) -> None:
-    await _begin_attempt(message, session, state, restart=False)
+    await _begin_attempt(message, session, state, restart=False, full=False)
+
+
+@router.message(F.text == BTN_KILLER_MODE)
+async def start_killer_mode(
+    message: Message,
+    session: AsyncSession,
+    state: FSMContext,
+) -> None:
+    await _begin_attempt(message, session, state, restart=False, full=True)
 
 
 @router.message(F.text == BTN_RETRY)
 async def retry_test(message: Message, session: AsyncSession, state: FSMContext) -> None:
-    await _begin_attempt(message, session, state, restart=True)
+    data = await state.get_data()
+    full = bool(data.get("full_mode", False))
+    if "full_mode" not in data and data.get("attempt_id"):
+        service = QuizService(session)
+        attempt = await service.attempts.get_by_id(int(data["attempt_id"]))
+        if attempt is not None:
+            settings = get_settings(require_token=False)
+            full = QuizService.is_full_attempt(attempt, settings.questions_per_test)
+    await _begin_attempt(message, session, state, restart=True, full=full)
 
 
 @router.message(F.text.in_({BTN_CONTINUE_TEST, BTN_CONTINUE}))
@@ -150,7 +182,9 @@ async def continue_test(message: Message, session: AsyncSession, state: FSMConte
 
 @router.message(F.text == BTN_RESTART)
 async def restart_test(message: Message, session: AsyncSession, state: FSMContext) -> None:
-    await _begin_attempt(message, session, state, restart=True)
+    data = await state.get_data()
+    full = bool(data.get("full_mode", False))
+    await _begin_attempt(message, session, state, restart=True, full=full)
 
 
 @router.message(F.text == BTN_CANCEL)
@@ -219,8 +253,10 @@ async def process_answer(
     await callback.answer()
 
     if status == "completed" and attempt is not None:
+        settings = get_settings(require_token=False)
+        full_mode = QuizService.is_full_attempt(attempt, settings.questions_per_test)
         await state.set_state(QuizStates.finished)
-        await state.update_data(attempt_id=attempt.id)
+        await state.update_data(attempt_id=attempt.id, full_mode=full_mode)
         finish_text = ResultService.format_finish_message(attempt)
         await callback.message.answer(
             finish_text,

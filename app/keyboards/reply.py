@@ -1,6 +1,7 @@
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
 BTN_START_TEST = "Начать тест"
+BTN_KILLER_MODE = "Убийца Административки"
 BTN_CONTINUE_TEST = "Продолжить тест"
 BTN_MY_RESULTS = "Мои результаты"
 BTN_HELP = "Помощь"
@@ -19,6 +20,7 @@ def main_menu_keyboard(*, has_active_attempt: bool = False) -> ReplyKeyboardMark
     rows.extend(
         [
             [KeyboardButton(text=BTN_START_TEST)],
+            [KeyboardButton(text=BTN_KILLER_MODE)],
             [KeyboardButton(text=BTN_MY_RESULTS), KeyboardButton(text=BTN_HELP)],
         ]
     )
