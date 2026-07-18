@@ -21,7 +21,7 @@ from app.keyboards.reply import (
     finish_menu_keyboard,
     main_menu_keyboard,
 )
-from app.services.quiz_service import QuestionPayload, QuizService
+from app.services.quiz_service import AnswerFeedback, QuestionPayload, QuizService
 from app.services.result_service import ResultService
 from app.states.quiz import QuizStates
 from app.utils import texts
@@ -29,6 +29,16 @@ from config import get_settings
 
 logger = logging.getLogger(__name__)
 router = Router(name="quiz")
+
+
+def _format_feedback(feedback: AnswerFeedback) -> str:
+    if feedback.is_correct:
+        return f"✅ Верно!\n\nВаш ответ: {feedback.selected_text}"
+    return (
+        "❌ Неверно.\n\n"
+        f"Ваш ответ: {feedback.selected_text}\n"
+        f"Правильный ответ: {feedback.correct_text}"
+    )
 
 
 def _format_question(payload: QuestionPayload) -> str:
@@ -227,7 +237,7 @@ async def process_answer(
 
     service = QuizService(session)
     try:
-        status, attempt, next_question = await service.submit_answer(
+        status, attempt, next_question, feedback = await service.submit_answer(
             attempt_id=attempt_id,
             question_id=question_id,
             option_id=option_id,
@@ -251,6 +261,9 @@ async def process_answer(
         logger.debug("Не удалось убрать клавиатуру у сообщения", exc_info=True)
 
     await callback.answer()
+
+    if feedback is not None:
+        await callback.message.answer(_format_feedback(feedback))
 
     if status == "completed" and attempt is not None:
         settings = get_settings(require_token=False)

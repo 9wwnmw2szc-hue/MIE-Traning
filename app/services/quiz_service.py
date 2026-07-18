@@ -27,6 +27,13 @@ class QuestionPayload:
     option_labels: list[str]
 
 
+@dataclass(slots=True)
+class AnswerFeedback:
+    is_correct: bool
+    selected_text: str
+    correct_text: str
+
+
 class QuizService:
     def __init__(self, session: AsyncSession) -> None:
         self.session = session
@@ -148,50 +155,63 @@ class QuizService:
         attempt_id: int,
         question_id: int,
         option_id: int,
-    ) -> tuple[str, Optional[TestAttempt], Optional[QuestionPayload]]:
+    ) -> tuple[
+        str,
+        Optional[TestAttempt],
+        Optional[QuestionPayload],
+        Optional[AnswerFeedback],
+    ]:
         """
         Returns:
             status: ok | already_answered | stale | not_found | completed | missing_question
             attempt
             next_question (if any)
+            feedback (if answer was accepted)
         """
         attempt = await self.attempts.get_by_id(attempt_id)
         if attempt is None or attempt.status != "in_progress":
-            return "not_found", None, None
+            return "not_found", None, None, None
 
         current = await self.get_current_question(attempt)
         if current is None:
-            return "missing_question", attempt, None
+            return "missing_question", attempt, None, None
 
         if current.question_id != question_id:
             if await self.attempts.has_answer(attempt_id, question_id):
-                return "already_answered", attempt, None
-            return "stale", attempt, None
+                return "already_answered", attempt, None, None
+            return "stale", attempt, None, None
 
         option_ids = {option_id_ for option_id_, _ in current.options}
         if option_id not in option_ids:
-            return "stale", attempt, None
+            return "stale", attempt, None, None
 
         question = await self.questions.get_by_id(question_id)
         if question is None:
-            return "missing_question", attempt, None
+            return "missing_question", attempt, None, None
 
         selected = next((opt for opt in question.options if opt.id == option_id), None)
         if selected is None:
-            return "stale", attempt, None
+            return "stale", attempt, None, None
+
+        correct_option = next((opt for opt in question.options if opt.is_correct), None)
+        feedback = AnswerFeedback(
+            is_correct=bool(selected.is_correct),
+            selected_text=selected.option_text,
+            correct_text=correct_option.option_text if correct_option else "—",
+        )
 
         answer = await self.attempts.save_answer(
             attempt=attempt,
             question_id=question_id,
             selected_option_id=option_id,
-            is_correct=bool(selected.is_correct),
+            is_correct=feedback.is_correct,
         )
         if answer is None:
-            return "already_answered", attempt, None
+            return "already_answered", attempt, None, None
 
         attempt = await self.attempts.get_by_id(attempt_id)
         if attempt is None:
-            return "not_found", None, None
+            return "not_found", None, None, None
 
         if attempt.current_index >= attempt.total_questions:
             percentage = self.calculate_percentage(
@@ -205,10 +225,10 @@ class QuizService:
                 attempt.correct_answers,
                 attempt.percentage,
             )
-            return "completed", attempt, None
+            return "completed", attempt, None, feedback
 
         next_question = await self.get_current_question(attempt)
-        return "ok", attempt, next_question
+        return "ok", attempt, next_question, feedback
 
     @staticmethod
     def calculate_percentage(correct: int, total: int) -> float:
