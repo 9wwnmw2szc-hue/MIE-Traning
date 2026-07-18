@@ -25,7 +25,7 @@ async def prepare_database() -> None:
     database_url = get_database_url()
     imported, skipped, errors = await run_import(database_url, QUESTIONS)
     logger.info(
-        "Импорт вопросов: загружено=%s пропущено=%s ошибок=%s",
+        "Импорт вопросов: добавлено/обновлено=%s без изменений=%s ошибок=%s",
         imported,
         skipped,
         len(errors),

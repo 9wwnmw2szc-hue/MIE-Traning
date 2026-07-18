@@ -89,7 +89,9 @@ class QuestionRepository:
 
     async def get_by_text(self, question_text: str) -> Optional[Question]:
         result = await self.session.execute(
-            select(Question).where(Question.question_text == question_text)
+            select(Question)
+            .where(Question.question_text == question_text)
+            .options(selectinload(Question.options))
         )
         return result.scalar_one_or_none()
 
@@ -112,6 +114,34 @@ class QuestionRepository:
             )
         await self.session.flush()
         return question
+
+    async def replace_options(
+        self,
+        question: Question,
+        options: list[tuple[str, bool]],
+    ) -> bool:
+        """Replace answer options. Returns True if anything changed."""
+        current = [
+            (option.option_text, bool(option.is_correct))
+            for option in sorted(question.options, key=lambda item: item.id)
+        ]
+        if current == options:
+            return False
+
+        for option in list(question.options):
+            await self.session.delete(option)
+        await self.session.flush()
+
+        for option_text, is_correct in options:
+            self.session.add(
+                AnswerOption(
+                    question_id=question.id,
+                    option_text=option_text,
+                    is_correct=is_correct,
+                )
+            )
+        await self.session.flush()
+        return True
 
 
 class AttemptRepository:

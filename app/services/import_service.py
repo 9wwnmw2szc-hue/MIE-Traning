@@ -81,6 +81,7 @@ class ImportService:
             raise ImportValidationError("Корневой элемент JSON должен быть массивом.")
 
         imported = 0
+        updated = 0
         skipped = 0
         errors: list[str] = []
 
@@ -95,13 +96,24 @@ class ImportService:
 
             existing = await self.questions.get_by_text(question_text)
             if existing is not None:
-                skipped += 1
+                changed = await self.questions.replace_options(existing, options)
+                if changed:
+                    updated += 1
+                else:
+                    skipped += 1
                 continue
 
             await self.questions.create_with_options(question_text, options)
             imported += 1
 
-        return imported, skipped, errors
+        logger.info(
+            "Импорт завершён: новых=%s обновлено=%s без изменений=%s ошибок=%s",
+            imported,
+            updated,
+            skipped,
+            len(errors),
+        )
+        return imported + updated, skipped, errors
 
 
 async def run_import(
